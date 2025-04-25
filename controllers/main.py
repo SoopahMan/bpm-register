@@ -10,8 +10,8 @@ class CustomerPortalExtended(CustomerPortal):
             'date_of_birth': partner.date_of_birth,
             'place_of_birth': partner.place_of_birth,
             'gender': partner.gender,
-            'school': partner.school,
-            'pengalaman': partner.pengalaman,
+            # 'school': partner.school,
+            # 'pengalaman': partner.pengalaman,
         })
         return values
     
