@@ -11,8 +11,8 @@
                       <field name="date_of_birth" string="Date of Birth"/>
                       <field name="place_of_birth" string="Place of Birth"/>
                       <field name="gender" string="Gender"/>
-                      <field name="school" string="Asal Sekolah"/>
-                      <field name="pengalaman" string="Pengalaman Belajar Bahasa Jepang (Opsional)"/>
+                      <!-- <field name="school" string="Asal Sekolah"/>
+                      <field name="pengalaman" string="Pengalaman Belajar Bahasa Jepang (Opsional)"/> -->
                     </group>
                   </group>
                 </page>
