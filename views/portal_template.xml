@@ -35,11 +35,26 @@
         <label class="col-form-label" for="gender">Gender</label>
         <select name="gender" t-attf-class="form-control #{error.get('gender') and 'is-invalid' or ''}" t-att-value="gender or partner.gender">
             <option value=""></option>
-            <option value="male" t-att-selected="gender == 'male'">Male</option>
-            <option value="female" t-att-selected="gender == 'female'">Female</option>
+            <option value="male" t-att-selected="gender == 'male'">Laki-laki</option>
+            <option value="female" t-att-selected="gender == 'female'">Perempuan</option>
         </select>
       </div>
     </xpath>
+
+    <xpath expr="//div[input[@name='school']]" position="after">
+      <div t-attf-class="mb-3 #{error.get('school') and 'o_has_error' or ''} col-xl-6">
+        <label class="col-form-label" for="school">Asal Sekolah</label>
+        <input type="text" name="school" t-attf-class="form-control #{error.get('school') and 'is-invalid' or ''}" t-att-value="school or partner.school" />
+      </div>
+    </xpath>
+
+    <xpath expr="//div[input[@name='pengalaman']]" position="after">
+      <div t-attf-class="mb-3 #{error.get('pengalaman') and 'o_has_error' or ''} col-xl-6">
+        <label class="col-form-label" for="pengalaman">Pengalaman Belajar Jepang (Opsional)</label>
+        <input type="text" name="pengalaman" t-attf-class="form-control #{error.get('pengalaman') and 'is-invalid' or ''}" t-att-value="pengalaman or partner.pengalaman" />
+      </div>
+    </xpath>
+
 
     <xpath expr="//div[@class='col-12 d-none d-xl-block']" position="replace">
         <div class="col-12 d-none">
