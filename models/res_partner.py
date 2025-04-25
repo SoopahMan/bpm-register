@@ -3,9 +3,11 @@ from odoo import models, fields
 class Partner(models.Model):
     _inherit = 'res.partner'
 
-    date_of_birth = fields.Date(string="Date of Birth")
-    place_of_birth = fields.Char(string="Place of Birth")
+    date_of_birth = fields.Date(string="Tanggal Lahir")
+    place_of_birth = fields.Char(string="Tempat Lahir")
     gender = fields.Selection(
-        [('male', 'Male'), ('female', 'Female')],
+        [('male', 'Laki-laki'), ('female', 'Perempuan')],
         string="Gender"
     )
+    school = fields.Char(string="School")
+    pengalaman = fields.Char(string="Pengalaman")
