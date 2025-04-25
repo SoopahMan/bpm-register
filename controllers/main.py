@@ -10,6 +10,8 @@ class CustomerPortalExtended(CustomerPortal):
             'date_of_birth': partner.date_of_birth,
             'place_of_birth': partner.place_of_birth,
             'gender': partner.gender,
+            'school': partner.school,
+            'pengalaman': partner.pengalaman,
         })
         return values
     
@@ -17,5 +19,5 @@ class CustomerPortalExtended(CustomerPortal):
       """ This method is there so that we can override the optional fields """
       return [
           "street2", "zipcode", "state_id", "vat", "company_name",
-          "mobile", "date_of_birth", "place_of_birth", "gender"
+          "mobile", "date_of_birth", "place_of_birth", "gender", "school", "pengalaman"
       ]
