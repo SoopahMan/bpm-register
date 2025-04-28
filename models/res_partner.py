@@ -9,6 +9,5 @@ class Partner(models.Model):
         [('male', 'Laki-laki'), ('female', 'Perempuan')],
         string="Gender"
     )
-    
-    # school = fields.Char(string="School")
-    # pengalaman = fields.Char(string="Pengalaman")
+    school = fields.Char(string="Asal Sekolah")
+    pengalaman = fields.Char(string="Pengalaman Belajar Jepang (Opsional)")
