@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='contact_addresses']" position="after">
                 <page string="Personal Details" name="personal_details">
-                  <group naem="container_row_2">
+                  <group name="container_row_2">
                     <group string="Birth &amp; Gender">
                       <field name="date_of_birth" string="Tanggal Lahir"/>
                       <field name="place_of_birth" string="Tempat Lahir"/>
