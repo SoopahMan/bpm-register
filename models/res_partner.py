@@ -7,8 +7,7 @@ class Partner(models.Model):
     place_of_birth = fields.Char(string="Tempat Lahir")
     gender = fields.Selection(
         [('male', 'Laki-laki'), ('female', 'Perempuan')],
-        string="Gender"
+        string="Jenis Kelamin"
     )
-    
-    # school = fields.Char(string="School")
-    # pengalaman = fields.Char(string="Pengalaman")
+    school = fields.Char(string="Asal Sekolah")
+    exp = fields.Char(string="Pengalaman")

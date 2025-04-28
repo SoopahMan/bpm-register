@@ -2,29 +2,29 @@
   <template id="fields_template_extended" inherit_id="auth_signup.fields" name="Auth Signup/Register form fields">
       <xpath expr="//div[hasclass('field-name')]" position="after">
           <div class="mb-3 field-mobile">
-              <label>Mobile</label>
-              <input type="text" name="mobile" t-att-value="mobile" id="mobile" class="form-control form-control-sm" placeholder="Mobile Number"/>
+              <label>Nomor Telepon</label>
+              <input type="text" name="mobile" t-att-value="mobile" id="mobile" class="form-control form-control-sm" placeholder="Nomor Telepon"/>
           </div>
       </xpath>
       <xpath expr="//div[hasclass('field-mobile')]" position="after">
           <div class="mb-3 field-dob">
-              <label>Date of Birth</label>
+              <label>Tanggal Lahir</label>
               <input type="date" name="date_of_birth" t-att-value="date_of_birth" id="date_of_birth" class="form-control form-control-sm"/>
           </div>
       </xpath>
       <xpath expr="//div[hasclass('field-dob')]" position="after">
           <div class="mb-3 field-pob">
-              <label>Place of Birth</label>
+              <label>Tempat Lahir</label>
               <input type="text" name="place_of_birth" t-att-value="place_of_birth" id="place_of_birth" class="form-control form-control-sm"/>
           </div>
       </xpath>
       <xpath expr="//div[hasclass('field-pob')]" position="after">
           <div class="mb-3 field-pob">
-              <label>Gender</label>
+              <label>Jenis Kelamin</label>
               <select name="gender" id="gender" class="form-control form-control-sm">
                   <option value=""></option>
-                  <option value="male" t-att-selected="gender == 'male'">Male</option>
-                  <option value="female" t-att-selected="gender == 'female'">Female</option>
+                  <option value="male" t-att-selected="gender == 'male'">Laki-laki</option>
+                  <option value="female" t-att-selected="gender == 'female'">Perempuan</option>
               </select>
           </div>
       </xpath>

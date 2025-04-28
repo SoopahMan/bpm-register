@@ -8,11 +8,11 @@
                 <page string="Personal Details" name="personal_details">
                   <group naem="container_row_2">
                     <group string="Birth &amp; Gender">
-                      <field name="date_of_birth" string="Date of Birth"/>
-                      <field name="place_of_birth" string="Place of Birth"/>
-                      <field name="gender" string="Gender"/>
-                      <!-- <field name="school" string="Asal Sekolah"/>
-                      <field name="pengalaman" string="Pengalaman Belajar Bahasa Jepang (Opsional)"/> -->
+                      <field name="date_of_birth" string="Tanggal Lahir"/>
+                      <field name="place_of_birth" string="Tempat Lahir"/>
+                      <field name="gender" string="Jenis Kelamin"/>
+                      <field name="school" string="Asal Sekolah"/>
+                      <field name="exp" string="Pengalaman Belajar Bahasa Jepang (Opsional)"/>
                     </group>
                   </group>
                 </page>
