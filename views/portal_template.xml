@@ -72,28 +72,28 @@
     <xpath expr="//div[input[@name='street']]" position="replace">
       <div t-attf-class="mb-3 #{error.get('street') and 'o_has_error' or ''} col-xl-6">
         <label class="col-form-label" for="street">Alamat</label>
-        <input type="tel" name="street" t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}" t-att-value="street or partner.street" />
+        <input type="text" name="street" t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}" t-att-value="street or partner.street" />
       </div>
     </xpath>
 
     <xpath expr="//div[input[@name='city']]" position="replace">
       <div t-attf-class="mb-3 #{error.get('city') and 'o_has_error' or ''} col-xl-6">
         <label class="col-form-label" for="city">Kota</label>
-        <input type="tel" name="city" t-attf-class="form-control #{error.get('city') and 'is-invalid' or ''}" t-att-value="city or partner.city" />
+        <input type="text" name="city" t-attf-class="form-control #{error.get('city') and 'is-invalid' or ''}" t-att-value="city or partner.city" />
       </div>
     </xpath>
 
     <xpath expr="//div[input[@name='street2']]" position="replace">
       <div t-attf-class="mb-3 #{error.get('street2') and 'o_has_error' or ''} col-xl-6">
         <label class="col-form-label label-optional" for="street2">Alamat 2</label>
-        <input type="tel" name="street2" t-attf-class="form-control #{error.get('street2') and 'is-invalid' or ''}" t-att-value="street2 or partner.street2" />
+        <input type="text" name="street2" t-attf-class="form-control #{error.get('street2') and 'is-invalid' or ''}" t-att-value="street2 or partner.street2" />
       </div>
     </xpath>
 
     <xpath expr="//div[input[@name='zipcode']]" position="replace">
-      <div t-attf-class="mb-3 #{error.get('zipcode') and 'o_has_error' or ''} col-xl-6">
+      <div t-attf-class="mb-3 #{error.get('zip') and 'o_has_error' or ''} col-xl-6">
         <label class="col-form-label" for="zipcode">Kode Pos</label>
-        <input type="tel" name="zipcode" t-attf-class="form-control #{error.get('zipcode') and 'is-invalid' or ''}" t-att-value="zipcode or partner.zipcode" />
+        <input type="text" name="zipcode" t-attf-class="form-control #{error.get('zip') and 'is-invalid' or ''}" t-att-value="zipcode or partner.zip" />
       </div>
     </xpath>
 
