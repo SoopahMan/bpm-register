@@ -8,7 +8,7 @@ Long description of module's purpose
     'author': "",
     'category': '',
     'version': '0.1',
-    'depends': ['base', 'auth_signup'],
+    'depends': ['base', 'auth_signup', 'portal', 'account'],
     'data': [
       # 'views/auth_signup_template.xml',
       'views/portal_template.xml',
