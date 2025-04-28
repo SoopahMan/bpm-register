@@ -41,7 +41,7 @@
       </div>
     </xpath>
 
-    <xpath expr="//div[select[@name='gender']]" position="after">
+    <!-- <xpath expr="//div[select[@name='gender']]" position="after">
       <div t-attf-class="mb-3 #{error.get('school') and 'o_has_error' or ''} col-xl-6">
         <label class="col-form-label" for="school">Asal Sekolah</label>
         <input type="text" name="school" t-attf-class="form-control #{error.get('school') and 'is-invalid' or ''}" t-att-value="school or partner.school" />
@@ -53,7 +53,7 @@
         <label class="col-form-label" for="pengalaman">Pengalaman Belajar Jepang (Opsional)</label>
         <input type="text" name="pengalaman" t-attf-class="form-control #{error.get('pengalaman') and 'is-invalid' or ''}" t-att-value="pengalaman or partner.pengalaman" />
       </div>
-    </xpath> 
+    </xpath>  -->
 
 
     <xpath expr="//div[@class='col-12 d-none d-xl-block']" position="replace">
